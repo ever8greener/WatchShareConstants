@@ -5,7 +5,7 @@
 * Question: How to declare a constant in swift that can be used in objective c
 
 1. Condition: objc code in main app & swift code in Watch2
-2. add new swift file  ( **Phone App and Watch-Extension both should be the target** )
+2. add new swift file  ( **Phone App and Watch-Extension both should be set as `target` ** )
 3. Select YES when XCode Popup appreas regarding "bridge header"
 4. Goto `Xcode - Project Target - Builde Settings > Packaging > Define Module` then select YES
 5. and also `Product Name` should be TwoTowers ( Default )
