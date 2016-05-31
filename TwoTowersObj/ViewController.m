@@ -6,8 +6,12 @@
 //  Copyright © 2016 Ever8greener. All rights reserved.
 //
 
+//
+
+
 #import "ViewController.h"
-#import "TwoTowersObj-Swift.h" // 프로젝트명-Swift.h 를 타이핑하면 됨( 실제파일은 존재하지않아도 됨)
+#import "TwoTowersObj-Swift.h"  //[ProjectName]-Swift.h doesn't have to be a real file name. Just type it.
+                                //프로젝트명-Swift.h 를 타이핑하면 됨( 실제파일은 존재하지않아도 됨)
 
 @interface ViewController ()
 @end
