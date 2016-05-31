@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Nemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TwoTowersObj.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6DBC0AAF1CFDAE6D0091D2E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DBC0ACB1CFDAED90091D2E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -13,7 +13,56 @@
 		6DBC0ABE1CFDAE6D0091D2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0ABC1CFDAE6D0091D2E8 /* Main.storyboard */; };
 		6DBC0AC01CFDAE6D0091D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0ABF1CFDAE6D0091D2E8 /* Assets.xcassets */; };
 		6DBC0AC31CFDAE6D0091D2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0AC11CFDAE6D0091D2E8 /* LaunchScreen.storyboard */; };
+		6DBC0AD01CFDAED90091D2E8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0ACE1CFDAED90091D2E8 /* Interface.storyboard */; };
+		6DBC0AD21CFDAED90091D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0AD11CFDAED90091D2E8 /* Assets.xcassets */; };
+		6DBC0AD91CFDAED90091D2E8 /* Nemo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6DBC0AD81CFDAED90091D2E8 /* Nemo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DBC0ADE1CFDAED90091D2E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0ADD1CFDAED90091D2E8 /* InterfaceController.swift */; };
+		6DBC0AE01CFDAED90091D2E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */; };
+		6DBC0AE21CFDAED90091D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */; };
+		6DBC0AE61CFDAED90091D2E8 /* Nemo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6DBC0ACC1CFDAED90091D2E8 /* Nemo.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DBC0ADA1CFDAED90091D2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBC0AA81CFDAE6D0091D2E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DBC0AD71CFDAED90091D2E8;
+			remoteInfo = "Nemo Extension";
+		};
+		6DBC0AE41CFDAED90091D2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBC0AA81CFDAE6D0091D2E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DBC0ACB1CFDAED90091D2E8;
+			remoteInfo = Nemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DBC0AEA1CFDAED90091D2E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6DBC0AD91CFDAED90091D2E8 /* Nemo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBC0AEE1CFDAED90091D2E8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6DBC0AE61CFDAED90091D2E8 /* Nemo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6DBC0AB01CFDAE6D0091D2E8 /* TwoTowersObj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoTowersObj.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +75,26 @@
 		6DBC0ABF1CFDAE6D0091D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DBC0AC21CFDAE6D0091D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DBC0AC41CFDAE6D0091D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBC0ACC1CFDAED90091D2E8 /* Nemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBC0ACF1CFDAED90091D2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6DBC0AD11CFDAED90091D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DBC0AD31CFDAED90091D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBC0AD81CFDAED90091D2E8 /* Nemo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nemo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBC0ADD1CFDAED90091D2E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DBC0AE31CFDAED90091D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6DBC0AAD1CFDAE6D0091D2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBC0AD51CFDAED90091D2E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				6DBC0AB21CFDAE6D0091D2E8 /* TwoTowersObj */,
+				6DBC0ACD1CFDAED90091D2E8 /* Nemo */,
+				6DBC0ADC1CFDAED90091D2E8 /* Nemo Extension */,
 				6DBC0AB11CFDAE6D0091D2E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				6DBC0AB01CFDAE6D0091D2E8 /* TwoTowersObj.app */,
+				6DBC0ACC1CFDAED90091D2E8 /* Nemo.app */,
+				6DBC0AD81CFDAED90091D2E8 /* Nemo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +148,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6DBC0ACD1CFDAED90091D2E8 /* Nemo */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC0ACE1CFDAED90091D2E8 /* Interface.storyboard */,
+				6DBC0AD11CFDAED90091D2E8 /* Assets.xcassets */,
+				6DBC0AD31CFDAED90091D2E8 /* Info.plist */,
+			);
+			path = Nemo;
+			sourceTree = "<group>";
+		};
+		6DBC0ADC1CFDAED90091D2E8 /* Nemo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC0ADD1CFDAED90091D2E8 /* InterfaceController.swift */,
+				6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */,
+				6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */,
+				6DBC0AE31CFDAED90091D2E8 /* Info.plist */,
+			);
+			path = "Nemo Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +179,51 @@
 				6DBC0AAC1CFDAE6D0091D2E8 /* Sources */,
 				6DBC0AAD1CFDAE6D0091D2E8 /* Frameworks */,
 				6DBC0AAE1CFDAE6D0091D2E8 /* Resources */,
+				6DBC0AEE1CFDAED90091D2E8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6DBC0AE51CFDAED90091D2E8 /* PBXTargetDependency */,
 			);
 			name = TwoTowersObj;
 			productName = TwoTowersObj;
 			productReference = 6DBC0AB01CFDAE6D0091D2E8 /* TwoTowersObj.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6DBC0ACB1CFDAED90091D2E8 /* Nemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBC0AEB1CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo" */;
+			buildPhases = (
+				6DBC0ACA1CFDAED90091D2E8 /* Resources */,
+				6DBC0AEA1CFDAED90091D2E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DBC0ADB1CFDAED90091D2E8 /* PBXTargetDependency */,
+			);
+			name = Nemo;
+			productName = Nemo;
+			productReference = 6DBC0ACC1CFDAED90091D2E8 /* Nemo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6DBC0AD71CFDAED90091D2E8 /* Nemo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBC0AE71CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo Extension" */;
+			buildPhases = (
+				6DBC0AD41CFDAED90091D2E8 /* Sources */,
+				6DBC0AD51CFDAED90091D2E8 /* Frameworks */,
+				6DBC0AD61CFDAED90091D2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nemo Extension";
+			productName = "Nemo Extension";
+			productReference = 6DBC0AD81CFDAED90091D2E8 /* Nemo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,10 +231,17 @@
 		6DBC0AA81CFDAE6D0091D2E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Ever8greener;
 				TargetAttributes = {
 					6DBC0AAF1CFDAE6D0091D2E8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6DBC0ACB1CFDAED90091D2E8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6DBC0AD71CFDAED90091D2E8 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -127,6 +260,8 @@
 			projectRoot = "";
 			targets = (
 				6DBC0AAF1CFDAE6D0091D2E8 /* TwoTowersObj */,
+				6DBC0ACB1CFDAED90091D2E8 /* Nemo */,
+				6DBC0AD71CFDAED90091D2E8 /* Nemo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +274,23 @@
 				6DBC0AC31CFDAE6D0091D2E8 /* LaunchScreen.storyboard in Resources */,
 				6DBC0AC01CFDAE6D0091D2E8 /* Assets.xcassets in Resources */,
 				6DBC0ABE1CFDAE6D0091D2E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBC0ACA1CFDAED90091D2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC0AD21CFDAED90091D2E8 /* Assets.xcassets in Resources */,
+				6DBC0AD01CFDAED90091D2E8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBC0AD61CFDAED90091D2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC0AE21CFDAED90091D2E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +307,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DBC0AD41CFDAED90091D2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC0AE01CFDAED90091D2E8 /* ExtensionDelegate.swift in Sources */,
+				6DBC0ADE1CFDAED90091D2E8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DBC0ADB1CFDAED90091D2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DBC0AD71CFDAED90091D2E8 /* Nemo Extension */;
+			targetProxy = 6DBC0ADA1CFDAED90091D2E8 /* PBXContainerItemProxy */;
+		};
+		6DBC0AE51CFDAED90091D2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DBC0ACB1CFDAED90091D2E8 /* Nemo */;
+			targetProxy = 6DBC0AE41CFDAED90091D2E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6DBC0ABC1CFDAE6D0091D2E8 /* Main.storyboard */ = {
@@ -172,6 +346,14 @@
 				6DBC0AC21CFDAE6D0091D2E8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6DBC0ACE1CFDAED90091D2E8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DBC0ACF1CFDAED90091D2E8 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +463,68 @@
 			};
 			name = Release;
 		};
+		6DBC0AE81CFDAED90091D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		6DBC0AE91CFDAED90091D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		6DBC0AEC1CFDAED90091D2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Nemo_Extension;
+				INFOPLIST_FILE = Nemo/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		6DBC0AED1CFDAED90091D2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Nemo_Extension;
+				INFOPLIST_FILE = Nemo/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +542,22 @@
 			buildConfigurations = (
 				6DBC0AC81CFDAE6D0091D2E8 /* Debug */,
 				6DBC0AC91CFDAE6D0091D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DBC0AE71CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBC0AE81CFDAED90091D2E8 /* Debug */,
+				6DBC0AE91CFDAED90091D2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DBC0AEB1CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBC0AEC1CFDAED90091D2E8 /* Debug */,
+				6DBC0AED1CFDAED90091D2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
