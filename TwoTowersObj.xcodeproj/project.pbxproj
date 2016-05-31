@@ -20,6 +20,8 @@
 		6DBC0AE01CFDAED90091D2E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */; };
 		6DBC0AE21CFDAED90091D2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */; };
 		6DBC0AE61CFDAED90091D2E8 /* Nemo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6DBC0ACC1CFDAED90091D2E8 /* Nemo.app */; };
+		6DF303D31CFDD566001592B9 /* WConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF303D21CFDD566001592B9 /* WConstants.swift */; };
+		6DF303D41CFDD566001592B9 /* WConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF303D21CFDD566001592B9 /* WConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DBC0AE31CFDAED90091D2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF303D11CFDD565001592B9 /* TwoTowersObj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoTowersObj-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DF303D21CFDD566001592B9 /* WConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +167,10 @@
 			children = (
 				6DBC0ADD1CFDAED90091D2E8 /* InterfaceController.swift */,
 				6DBC0ADF1CFDAED90091D2E8 /* ExtensionDelegate.swift */,
+				6DF303D21CFDD566001592B9 /* WConstants.swift */,
 				6DBC0AE11CFDAED90091D2E8 /* Assets.xcassets */,
 				6DBC0AE31CFDAED90091D2E8 /* Info.plist */,
+				6DF303D11CFDD565001592B9 /* TwoTowersObj-Bridging-Header.h */,
 			);
 			path = "Nemo Extension";
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				6DBC0ABB1CFDAE6D0091D2E8 /* ViewController.m in Sources */,
 				6DBC0AB81CFDAE6D0091D2E8 /* AppDelegate.m in Sources */,
 				6DBC0AB51CFDAE6D0091D2E8 /* main.m in Sources */,
+				6DF303D31CFDD566001592B9 /* WConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DBC0AE01CFDAED90091D2E8 /* ExtensionDelegate.swift in Sources */,
+				6DF303D41CFDD566001592B9 /* WConstants.swift in Sources */,
 				6DBC0ADE1CFDAED90091D2E8 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -434,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -445,10 +453,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TwoTowersObj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nemo Extension/TwoTowersObj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -456,10 +468,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TwoTowersObj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.TwoTowersObj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nemo Extension/TwoTowersObj-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -544,6 +559,7 @@
 				6DBC0AC91CFDAE6D0091D2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DBC0AE71CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo Extension" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +568,7 @@
 				6DBC0AE91CFDAED90091D2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DBC0AEB1CFDAED90091D2E8 /* Build configuration list for PBXNativeTarget "Nemo" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +577,7 @@
 				6DBC0AED1CFDAED90091D2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

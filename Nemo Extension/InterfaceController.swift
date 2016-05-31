@@ -15,6 +15,10 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        let watch:WatchModule = WatchModule()
+        
+        print("stop value : \(watch.kStop)")
+        
         // Configure interface objects here.
     }
 
